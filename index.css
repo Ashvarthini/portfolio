@@ -8,24 +8,119 @@ body{
     color: #FFFFFF;
 }
 
-/* The nav bar */
+/*start : The nav bar */
 nav{
     font-family: 'Lucida Sans';
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    padding-left: 3rem;
-    
+    padding: 0 3rem;  
 }
-.right_nav_container{
+.right-nav-container{
     display: flex;
     align-items: center;
 }
-.menu_icon{
+.menu-icon{
     height: 1.5rem;
 }
-.link{
+nav a{
     text-decoration: none;
     font-size: small;
+    padding-right: 1rem;
 }
+.link ,.work{
+    color:  #89CFF0;
+}
+.about{
+    color: #FFFFFF;
+}
+.about, .work{
+    display: none;
+}
+@media (max-width : 768px) {
+    nav{
+       padding: 0 1rem;
+    }
+    .name{
+        font-size: 0.7rem;
+    }
+    .link{
+        display: none;
+    }
+    .about , .work{
+        display: inline;
+        font-size: 0.4rem;
+    }
+    .menu-icon{
+        height: 1rem;
+    }
+}
+/* end: Nav bar */
+
+/* start : main */
+/* start : introduction section */
+.introduction-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    font-family: 'Lucida Sans';
+}
+.desinger{
+    color: #89CFF0;
+    background-color: #89CFF030;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    font-size: small;
+}
+.main-name{
+    padding-top: 1rem;
+    font-size: 5rem;
+    padding-bottom: 4rem;
+}
+.divider-top{
+    display:inline-block;
+    height: 0.1rem;
+    width: 3rem;
+    border-radius: 1rem;
+    background-color: #808080;
+}
+.intro-desktop{
+    padding-top: 2rem;
+    width: 40rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.intro-mobile{
+    display: none;
+}
+
+@media (max-width:768px){
+    .introduction-section{
+        padding-top: 1rem;
+    }
+    .desinger{
+        font-size: 0.7rem;
+        border: 0.5px solid #89CFF0;
+    }
+    .main-name{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .divider-top{
+        display: none;
+    }
+    .intro-desktop{
+        display: none;
+    }
+    .intro-mobile{
+        display: inline-block;
+        width: 10rem;
+        font-size: 0.5rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+}
+/* end : introduction section */
