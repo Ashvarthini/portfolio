@@ -15,7 +15,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    padding: 0 3rem;  
+    padding: 0 2.5rem;  
+}
+.left-nav-container{
+    font-size: 1.5rem;
 }
 .right-nav-container{
     display: flex;
@@ -124,3 +127,40 @@ nav a{
     }
 }
 /* end : introduction section */
+
+/* start: images section */
+.images-section{
+    padding: 5rem 3rem; 
+}
+.first-row , .second-row{
+    display: flex;
+    gap : 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.images-section img{
+    width: 28rem;
+    height: 30rem;
+}
+.divider-bottom{
+    width: 100%;
+    height: 1px;
+    background-color: #80808050;
+    margin: 7rem 0;
+}
+@media (max-width:768px){
+    .images-section{
+        padding: 2rem 1rem;
+    }
+    .first-row,
+    .second-row{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .images-section img{
+        width: 13.5rem;
+        height: 18rem;
+    }
+
+}
