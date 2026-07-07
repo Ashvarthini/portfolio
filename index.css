@@ -130,16 +130,18 @@ nav a{
 
 /* start: images section */
 .images-section{
-    padding: 5rem 3rem; 
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 4rem; 
 }
 .first-row , .second-row{
     display: flex;
-    gap : 2rem;
+    gap : 1.5rem;
     justify-content: center;
     padding-top: 2rem;
 }
-.images-section img{
-    width: 28rem;
+.image{
+    width: 25.4rem;
     height: 30rem;
 }
 .divider-bottom{
@@ -147,6 +149,9 @@ nav a{
     height: 1px;
     background-color: #80808050;
     margin: 7rem 0;
+}
+.caption , .description, .arrow{
+    display: none;
 }
 @media (max-width:768px){
     .images-section{
@@ -158,9 +163,60 @@ nav a{
         align-items: center;
         gap: 1rem;
     }
-    .images-section img{
+    .image{
         width: 13.5rem;
         height: 18rem;
     }
-
+    .card{
+       position: relative; 
+    }
+    .mobile-card-view{
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;    
+    }
+    .caption{
+        position: absolute;
+        display: inline;
+        color: #89CFF0;
+        white-space: nowrap;
+        font-family: 'Lucida Sans';
+        font-size: 0.5rem;
+        bottom: 2rem;
+    }
+    .description{
+        position: absolute;
+        display: inline;
+        white-space: nowrap;
+        font-family: 'Lucida Sans';
+        font-size: 0.8rem;
+        bottom: 0.5rem;
+    }
+    .arrow{
+        position: absolute;
+        display: inline;
+        height: 2rem;
+        width: 2rem;
+        bottom : 0.3rem;
+        left: 10rem;
+    }
+    .divider-bottom{
+        height: 2px;
+        width: 2rem;
+        margin: 3rem 0 0 1.1rem;
+        border-radius: 2rem;
+    }
 }
+/* end: images section */
+
+/* start : big names section */
+.big-names-section{
+    padding-top: 0rem;
+}
+p{
+    color: #808080;
+    font-family: 'Lucida Sans';
+    font-size: 0.8rem;
+    text-align: center;
+}
+/* end : big names section */
