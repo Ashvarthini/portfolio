@@ -264,8 +264,8 @@ nav a{
         padding: 0rem 1rem;
     }
     .big-names{
-        color: #FFFFFF;
-        font-size: 0.5rem;
+        color:#808080;
+        font-size: 0.7rem;
         text-align: left;
         padding-left: 0.2rem;
     }
@@ -306,3 +306,54 @@ nav a{
     }
 }
 /* end : big names section */
+/* end : main  */
+
+/* start : footer */
+footer{
+    padding: 3rem 0rem;
+    text-align: center;
+    font-family: 'Lucida Sans';
+    line-height: 3rem;
+}
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.end-message{
+    color: #808080;
+}
+.circle{
+    border: 1px solid #808080; 
+    width: 3rem;
+    height: 3rem; 
+    border-radius: 50%;
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.social-media-mobile-view{
+    display: none;
+}
+@media (max-width:768px){
+    .copyrights{
+        font-size: 0.8rem;
+    }
+    .social-media-icons{
+        display: none;
+    }
+    .social-media-mobile-view{
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+    .social-media-mobile-view a{
+        color: #808080;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+    .end-message{
+        font-size: 1rem;
+    }
+}
+/* end : footer */
