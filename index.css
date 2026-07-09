@@ -95,7 +95,9 @@ nav a {
     border-radius: 2rem;
     font-size: small;
 }
-
+.main-name-mobile-view{
+    display: none;
+}
 .main-name {
     padding-top: 1rem;
     font-size: 5rem;
@@ -130,8 +132,12 @@ nav a {
         font-size: 0.7rem;
         border: 0.5px solid #89CFF0;
     }
-
-    .main-name {
+    .main-name{
+        display: none;
+    }
+    .main-name-mobile-view {
+        display: inline;
+        padding-top: 1rem;
         font-size: 3rem;
         text-align: center;
         padding-bottom: 1rem;
@@ -244,7 +250,7 @@ nav a {
         height: 2rem;
         width: 2rem;
         bottom: 0.3rem;
-        left: 13rem;
+        left: 16.5rem;
     }
 
     .divider-bottom {
