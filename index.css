@@ -132,7 +132,7 @@ nav a {
     }
 
     .main-name {
-        font-size: 2rem;
+        font-size: 3rem;
         text-align: center;
         padding-bottom: 1rem;
     }
@@ -194,6 +194,7 @@ nav a {
 @media (max-width:768px) {
     .images-section {
         padding: 2rem 1rem 0 1rem;
+        justify-content: center;
     }
 
     .first-row,
@@ -204,8 +205,8 @@ nav a {
     }
 
     .image {
-        width: 13.5rem;
-        height: 18rem;
+        width: 100%;
+        height: 21rem;
     }
 
     .card {
@@ -243,7 +244,7 @@ nav a {
         height: 2rem;
         width: 2rem;
         bottom: 0.3rem;
-        left: 10rem;
+        left: 13rem;
     }
 
     .divider-bottom {
